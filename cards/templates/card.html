@@ -1,0 +1,12 @@
+{% extends "base.htmL" %}. {% block content %}
+<h1>cards List</h1>
+<ul>
+    {% for card in cards %}
+    <li>
+        {{ cards. title f}}: {% if cards.completed} %Completed{% else %}Not completed{% endif %}
+    </li>
+    {% endfor %}
+    {% endblock %}
+</ul>
+
+    
